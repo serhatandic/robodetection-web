@@ -129,6 +129,22 @@ nav {
 	-webkit-text-fill-color: transparent;
 	display: inline-block;
 }
+.robodetect-logo-m {
+	font-size: 19px; /* Large font size for impact */
+	color: white; /* Bright text color */
+	background: black; /* Dark background for contrast */
+	font-family: 'Arial Black', sans-serif; /* Bold, impactful font */
+	text-align: center;
+	letter-spacing: 5px; /* Spacing between letters */
+	padding: 20px;
+
+	overflow: hidden; /* Ensures the text fits in the div */
+	text-transform: uppercase; /* Makes all letters uppercase */
+	background: url('images/texture.jpeg'); /* Path to a distressed texture background */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
+}
 .robodetect-style {
 	background: black; /* Dark background for contrast */
 	font-family: 'Arial Black', sans-serif; /* Bold, impactful font */
@@ -816,5 +832,23 @@ video {
 		.demo-container {
 			margin-bottom: 0px;
 		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.robodetect-logo {
+		display: none;
+	}
+	.robodetect-logo-m {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.robodetect-logo {
+		display: block;
+	}
+	.robodetect-logo-m {
+		display: none;
 	}
 }
