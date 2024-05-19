@@ -19,7 +19,7 @@
         <div class="robodetect-logo-m">
             RD            
         </div>
-        
+
         <a href="#home" class="scroll-link">Home</a>
         <a href="#features" class="scroll-link">Features</a>
         <a href="#how-it-works" class="scroll-link"> How It Works</a>
@@ -28,7 +28,7 @@
     </nav>
     <header class="hero" id="home">
         <div class="hero-content">
-            <h1 class="robodetect-style">ROBODETECTION<br>Advanced Robotic Control and Command System for Human Detection, Tracking, and Mapping</h1>
+            <h1 class="robodetect-style">ROBODETECTION<br>Advanced system for human detection, tracking, and mapping. Better, safer, easier. Revolutionizing rescue operations.</h1>
             <p>The RoboDetection project is engineered to support rescue teams in coordinating operations within disaster zones. Utilizing state-of-the-art technology, RoboDetection ensures effective and efficient rescue missions. With <b>ROBODETECTION</b>, rescue operations become quicker, more dependable, and safer for both rescuers and survivors.</p>
             <a href="#features" class="btn scroll-link">Learn More</a>
 
@@ -39,18 +39,44 @@
         <section id="features">
             <h2 style="margin-top: 2rem;">Features</h2>
             <div class="features lazy-load">
-                <div class="feature" id="feature1">
+                <div class="feature" id="feature4">
                     <div class="feature-image">
-                        <img src="images/human_detect.webp" alt="Feature 1">
+                        <img src="images/control.jpg" alt="Feature 4">
                     </div>
                     <div class="feature-content">
-                        <p>RoboDetection receives real-time video streams from the robot, processes them using the YOLO object detection algorithm, and outputs video streams with humans highlighted by bounding boxes. This allows operators to identify and track individuals within the robot’s field of vision effectively.</p>
+                        <p>From intuitive Web UIs to advanced physical controls, operators can command RoboDetection using various input methods including keyboards, digital joysticks.</p>
                         <div class="video-icon-container">
                             <svg class="video-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
                             </svg>
                         </div>
-                        <h3>Human Detection</h3>
+                        <h3>Control and Command for Robot Dog</h3>
+                    </div>
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="close4">&times;</span>
+                            <p style="color: white;">Control and Command for Robot Dog</p>
+                            <div class="video-container">
+                                <video controls autoplay playsinline>
+                                    <source src="videos/control-and-command.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature" id="feature1">
+                    <div class="feature-image">
+                        <img src="images/human_detect.webp" alt="Feature 1">
+                    </div>
+                    <div class="feature-content">
+                        <p>RoboDetection receives real-time video streams from the robot, processes them using the YOLO object detection algorithm, and outputs video streams with humans highlighted by bounding boxes, allowing operators to identify and track individuals within the robot’s field of vision effectively. Operators can select a target individual with a simple mouse click within the Web UI, after which the system autonomously directs the robot to follow the selected individual, streamlining tracking in complex environments like debris fields or caves.</p>
+                        <div class="video-icon-container">
+                            <svg class="video-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Human Detection And Tracking</h3>
                     </div>
                     <div id="modal1" class="modal">
                         <div class="modal-content">
@@ -58,14 +84,14 @@
                             <p style="color: white;">Human Detection</p>
                             <div class="video-container">
                                 <video controls autoplay playsinline>
-                                    <source src="videos/human_detection.mp4" type="video/mp4">
+                                    <source src="videos/detection-and-tracking.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="feature" id="feature2">
+                <!-- <div class="feature" id="feature2">
                     <div class="feature-image">
                         <img src="images/human_track.jpg" alt="Feature 2">
                     </div>
@@ -90,7 +116,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="feature" id="feature3">
                     <div class="feature-image">
                         <img src="images/mapping.jpg" alt="Feature 3">
@@ -110,39 +136,14 @@
                             <p style="color: white;">Real Time Area Mapping</p>
                             <div class="video-container">
                                 <video controls autoplay playsinline>
-                                    <source src="videos/Mapping.mp4" type="video/mp4">
+                                    <source src="videos/mapping.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="feature" id="feature4">
-                    <div class="feature-image">
-                        <img src="images/control.jpg" alt="Feature 4">
-                    </div>
-                    <div class="feature-content">
-                        <p>From intuitive Web UIs to advanced physical controls, operators can command RoboDetection using various input methods including keyboards, digital joysticks.</p>
-                        <div class="video-icon-container">
-                            <svg class="video-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                        </div>
-                        <h3>Control and Command for Robot Dog</h3>
-                    </div>
-                    <div id="modal4" class="modal">
-                        <div class="modal-content">
-                            <span class="close" id="close4">&times;</span>
-                            <p style="color: white;">Control and Command for Robot Dog</p>
-                            <div class="video-container">
-                                <video controls autoplay playsinline>
-                                    <source src="videos/human_detection.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
         </section>
         
@@ -158,8 +159,8 @@
                 </li>
                 <li style="--cardColor:var(--color-darkestgrey)">
                     <div class="content">
-                        <div class="title">Server Side Processing, YOLO</div>
-                        <div class="text">The server processes the video stream with the YOLO object detection algorithm, annotating objects with bounding boxes and generating a 2D occupancy grid map from depth information.</div>
+                        <div class="title">Server Side Processing, YOLO, 2D Mapping</div>
+                        <div class="text">The server processes the video stream with the YOLO object detection algorithm, annotating objects with bounding boxes and generating a 2D occupancy grid map using depth information from laser sensors.</div>
                     </div>
                 </li>
                 <li style="--cardColor:var(--color-darkerrgrey)">
@@ -291,7 +292,7 @@
                         <a href="https://www.linkedin.com/in/emreakbas/"><i class='fa fa-linkedin-square fa-2x'></i></a>
                         <a href="https://user.ceng.metu.edu.tr/~emre/"><i class="fa fa-globe fa-2x"></i></i></a>
                     </div>
-                    <h3>Asst. Prof. Dr. Emre Akbaş</h3>
+                    <h3>Assoc. Prof. Dr. Emre Akbaş</h3>
                     <p>Project Supervisor and Mentor</p>
                 </div>
             </div>
