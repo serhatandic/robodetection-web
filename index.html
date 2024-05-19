@@ -57,7 +57,7 @@
                             <span class="close" id="close4">&times;</span>
                             <p style="color: white;">Control and Command for Robot Dog</p>
                             <div class="video-container">
-                                <video controls autoplay playsinline>
+                                <video controls playsinline autoplay>
                                     <source src="videos/control-and-command.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
@@ -83,7 +83,7 @@
                             <span class="close" id="close1">&times;</span>
                             <p style="color: white;">Human Detection</p>
                             <div class="video-container">
-                                <video controls autoplay playsinline>
+                                <video controls playsinline autoplay>
                                     <source src="videos/detection-and-tracking.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
@@ -135,8 +135,8 @@
                             <span class="close" id="close3">&times;</span>
                             <p style="color: white;">Real Time Area Mapping</p>
                             <div class="video-container">
-                                <video controls autoplay playsinline>
-                                    <source src="videos/mapping.mp4" type="video/mp4">
+                                <video controls playsinline autoplay>
+                                    <source src="videos/area-mapping.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -330,6 +330,7 @@
                 scrollTop: $(target).offset().top - 60
             }, 1000); // 1000 milliseconds = 1 second
         });
+
         /* Intersection Observer */
         let observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
@@ -388,14 +389,26 @@
     features.forEach((feature, index) => {
         feature.addEventListener('click', () => {
             modals[index].style.display = 'block'; // Display the corresponding modal when clicked
+            
+            // Play the video if it's in the modal
+            const video = modals[index].querySelector('video');
+            if (video) {
+                video.play();
+            }
         });
     });
 
     closeButtons.forEach((button, index) => {
-        button.addEventListener('click', () => {
+        button.addEventListener('click', (event) => {
             event.stopPropagation();
             modals[index].style.setProperty('display', 'none', 'important'); // Hide the corresponding modal with higher specificity
-            console.log(modals[index]);
+            
+            // Stop and reset the video if it's in the modal
+            const video = modals[index].querySelector('video');
+            if (video) {
+                video.pause();
+                video.currentTime = 0;
+            }
         });
     });
 
@@ -404,13 +417,21 @@
         modals.forEach((modal) => {
             if (event.target === modal) {
                 modal.style.display = 'none';
+                
+                // Stop and reset the video if it's in the modal
+                const video = modal.querySelector('video');
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
             }
         });
     });
+
     document.addEventListener('scroll', function() {
         var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        var fadeStart = 50; // Start fade at 100px scroll
-        var fadeUntil = 200; // End fade at 500px scroll
+        var fadeStart = 50; // Start fade at 50px scroll
+        var fadeUntil = 200; // End fade at 200px scroll
     
         var opacity = 1;
         if (scrollTop <= fadeStart) {
@@ -424,6 +445,7 @@
         document.querySelector('.human').style.opacity = opacity;
     });
 </script>
+
 
     
 

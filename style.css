@@ -635,6 +635,7 @@ a[href^='mailto:']:hover {
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 /* Existing CSS code */
