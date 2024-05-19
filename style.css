@@ -517,6 +517,14 @@ section p {
 .contact-us {
 	padding: 2rem;
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+}
+.aselsan-anchor {
+	margin: 0;
 }
 
 .contact-us h3 {
