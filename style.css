@@ -712,7 +712,9 @@ video {
 .poster-container:hover .middle {
 	opacity: 1;
 }
-
+.navbar {
+	padding-right: 2rem;
+}
 /* Responsive */
 @media screen and (max-width: 768px) {
 	.hero h1 {
@@ -780,6 +782,9 @@ video {
 	}
 
 	@media screen and (max-width: 480px) {
+		.scroll-link {
+			font-size: 0.9rem;
+		}
 		.hero h1 {
 			font-size: 1.4rem;
 		}
